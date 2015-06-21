@@ -1,3 +1,4 @@
 <?php
 echo "hello heroku";
-echo "auto deploy?"
+echo "auto deploy?";
+?>
