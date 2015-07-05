@@ -3,3 +3,6 @@
   font-weight: bold;
   color:#FFBC54;;
 }
+.widthError,.heightError {
+  color:#FA874B;
+}

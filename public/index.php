@@ -14,6 +14,7 @@
 <script src="assets/js/jquery.zclip.min.js"></script>
 <script src="assets/js/jquery.ba-tinypubsub.js"></script>
 <script src="assets/js/myscript.js"></script>
+<script src="assets/js/image.js"></script>
 </head>
 <body>
 <div class="container">
@@ -22,7 +23,25 @@
             <textarea>hogehoge</textarea>
             <a id="copy-btn" href="#" class="btn btn-success">Copy</a>
         </div>
-        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-2">
+            <label for="input-width">Width:</label>
+            <input type="text" class="form-control" id="input-width" placeholder="100px">
+            <span class="widthError"></span>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="input-height">height:</label>
+            <input type="text" class="form-control" id="input-height" placeholder="100px">
+            <span class="heightError"></span>
+        </div>
+        <div class="col-md-8">
+
+            <a class="btn btn-default download-btn" data-w="100" data-h="100" data-ext="png" href="/src/image.php" role="button">.png</a>
+            <a class="btn btn-default download-btn" data-w="100" data-h="100" data-ext="jpg" href="/src/image.php" role="button">.jpg</a>
+            <a class="btn btn-default download-btn" data-w="100" data-h="100" data-ext="gif" href="/src/image.php" role="button">.gif</a>
+        </div>
     </div>
 </div>
 </body>
