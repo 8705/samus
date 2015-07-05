@@ -27,23 +27,61 @@ $.subscribe('image/heightError',function(event, msg){
   err.flg = message !== '';
   $('.heightError').text(message);
 });
+$.subscribe('view/setWidth',function(event,width){
+  if ( !width ) width = 100;
+  $('.view-w').each(function(){
+    $(this).text(width);
+  });
+});
+$.subscribe('view/widthError',function(event,bool){
+  var err = bool || false;
+  $('.view-w').each(function(){
+    if ( err ) {
+      $(this).addClass('error');
+    } else {
+      $(this).removeClass('error');
+    }
+  });
+});
+$.subscribe('view/setHeight',function(event,height){
+  if ( !height ) height = 100;
+  $('.view-h').each(function(){
+    $(this).text(height);
+  });
+});
+$.subscribe('view/heightError',function(event,bool){
+  var err = bool || false;
+  $('.view-h').each(function(){
+    if ( err ) {
+      $(this).addClass('error');
+    } else {
+      $(this).removeClass('error');
+    }
+  });
+});
 
 $(function(){
   var url,ext,w,h;
   var re = /^[0-9]{1,4}$/;
   $('#input-width').on('keyup change',function(){
+    $.publish('view/setWidth',$(this).val());
     if ( ($(this).val() !== "" && !$(this).val().match(re)) || $(this).val() > MAXSIZE) {
       $.publish('image/widthError',err.imagesizemsg);
+      $.publish('view/widthError',true);
       return;
     }
     $.publish('image/setWidth',$(this).val());
+    $.publish('view/widthError');
   });
   $('#input-height').on('keyup change',function(){
+    $.publish('view/setHeight',$(this).val());
     if ( ($(this).val() !== "" && !$(this).val().match(re)) || $(this).val() > MAXSIZE) {
       $.publish('image/heightError',err.imagesizemsg);
+      $.publish('view/heightError',true);
       return;
     }
     $.publish('image/setHeight',$(this).val());
+    $.publish('view/heightError');
   });
   $('.download-btn').on('click mouseDown touch',function(e){
     if ( err.flg ) {

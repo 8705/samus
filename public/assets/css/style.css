@@ -5,4 +5,12 @@
 }
 .widthError,.heightError {
   color:#FA874B;
+  font-size: 8px;
+}
+.image .view-w,
+.image .view-h {
+  font-size: 25px;
+}
+.image span.error {
+  color:#FA874B;
 }
