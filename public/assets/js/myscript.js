@@ -3,13 +3,23 @@ var clipBoard;
 (function (clipBoard){
   var set = (function(){
     var path = '/assets/js/ZeroClipboard.swf';
-    return function(click) {
-      click.zclip({
+    return function(btn) {
+      btn.zclip({
         path: path,
         beforeCopy:function(){
-          var text = $('#text1').val();
-          var num  = $('#num1').val();
-          $('#copytext').val(text.repeat(num));
+          var text;
+          switch (btn.attr('id')) {
+            case 'copy-btn1':
+              text = $('#copytext').val();
+              break;
+            case 'copy-btn2':
+              var num = $('#num').val();
+              text = String_random('[a-z]{'+num+'}');
+              break;
+            default:
+              break;
+          }
+          $('#copytext').val(text);
         },
         copy: function(){
           return $('#copytext').val();
@@ -36,5 +46,7 @@ $.subscribe("copy/success",function(event,$btn){
 });
 
 $(function(){
-  clipBoard.set($('#copy-btn'));
+  clipBoard.set($('#copy-btn1'));
+  clipBoard.set($('#copy-btn2'));
+  clipBoard.set($('#copy-btn3'));
 });
