@@ -6,10 +6,26 @@
 .widthError,.heightError {
   color:#FA874B;
   font-size: 8px;
+  height: 10px;
+  display: inline-block;
+}
+.image.table th {
+  vertical-align: middle;
+  width: 300px;
+}
+.image.table tr:nth-child(3) td,
+.image.table tr:nth-child(4) td{
+  border-top:none;
+}
+.image .download-btn {
+  min-width: 55px
 }
 .image .view-w,
 .image .view-h {
-  font-size: 25px;
+  font-size: 45px;
+}
+.image .view-x {
+  margin: 0 5px 0 12px;
 }
 .image span.error {
   color:#FA874B;

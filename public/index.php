@@ -48,18 +48,18 @@
                 <td colspan="2">
                     <div class="form-group col-md-6">
                         <label for="input-width">Width:</label>
-                        <input type="text" class="form-control" id="input-width" placeholder="100px">
+                        <input type="text" class="form-control" id="input-width" placeholder="100" maxlength="4">
                         <span class="widthError"></span>
                     </div>
                     <div class="form-group col-md-6">
                         <label for="input-height">height:</label>
-                        <input type="text" class="form-control" id="input-height" placeholder="100px">
+                        <input type="text" class="form-control" id="input-height" placeholder="100" maxlength="4">
                         <span class="heightError"></span>
                     </div>
                 </td>
             </tr>
             <tr>
-                <th>
+                <th rowspan="3" class="md-col-7">
                     <span class="view-w">100</span><span class="view-x">✕</span><span class="view-h">100</span>
                 </th>
                 <td>
@@ -67,17 +67,11 @@
                 </td>
             </tr>
             <tr>
-                <th>
-                    <span class="view-w">100</span><span class="view-x">✕</span><span class="view-h">100</span>
-                </th>
                 <td>
                     <a class="btn btn-success download-btn" data-w="100" data-h="100" data-ext="jpg" href="/src/image.php" role="button">.jpg</a>
                 </td>
             </tr>
             <tr>
-                <th>
-                    <span class="view-w">100</span><span class="view-x">✕</span><span class="view-h">100</span>
-                </th>
                 <td>
                     <a class="btn btn-success download-btn" data-w="100" data-h="100" data-ext="gif" href="/src/image.php" role="button">.gif</a>
                 </td>
