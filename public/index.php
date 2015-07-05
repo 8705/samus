@@ -63,7 +63,7 @@
                     <span class="view-w">100</span><span class="view-x">✕</span><span class="view-h">100</span>
                 </th>
                 <td>
-                    <a class="btn btn-default download-btn" data-w="100" data-h="100" data-ext="png" href="/src/image.php" role="button">.png</a>
+                    <a class="btn btn-success download-btn" data-w="100" data-h="100" data-ext="png" href="/src/image.php" role="button">.png</a>
                 </td>
             </tr>
             <tr>
@@ -71,7 +71,7 @@
                     <span class="view-w">100</span><span class="view-x">✕</span><span class="view-h">100</span>
                 </th>
                 <td>
-                    <a class="btn btn-default download-btn" data-w="100" data-h="100" data-ext="jpg" href="/src/image.php" role="button">.jpg</a>
+                    <a class="btn btn-success download-btn" data-w="100" data-h="100" data-ext="jpg" href="/src/image.php" role="button">.jpg</a>
                 </td>
             </tr>
             <tr>
@@ -79,7 +79,7 @@
                     <span class="view-w">100</span><span class="view-x">✕</span><span class="view-h">100</span>
                 </th>
                 <td>
-                    <a class="btn btn-default download-btn" data-w="100" data-h="100" data-ext="gif" href="/src/image.php" role="button">.gif</a>
+                    <a class="btn btn-success download-btn" data-w="100" data-h="100" data-ext="gif" href="/src/image.php" role="button">.gif</a>
                 </td>
             </tr>
         </table>
