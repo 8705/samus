@@ -27,6 +27,8 @@
             <h3>入力した文字列をコピーできる</h3>
             <textarea id="copytext" class="form-control"></textarea>
             <a id="copy-btn1" class="btn btn-success">Copy</a>
+            文字数：<span id="text_count">0</span> 文字
+            byte数：<span id="text_byte">0</span> byte
             <h3>入力した文字数分だけランダム文字列をコピーできる</h3>
             <select id="random_type" class="form-control">
                 <option value="[a-zA-Z0-9]">半角英数字(a-zA-Z0-9)</option>

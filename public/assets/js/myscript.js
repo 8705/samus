@@ -20,6 +20,8 @@ var clipBoard;
             default:
               break;
           }
+          $('#text_count').text(text.length);
+          $('#text_byte').text(CountLength(text));
           $('#copytext').val(text);
         },
         copy: function(){
@@ -51,3 +53,25 @@ $(function(){
   clipBoard.set($('#copy-btn2'));
   clipBoard.set($('#copy-btn3'));
 });
+
+/****************************************************************
+* バイト数を数える
+*
+* 引数 ： str 文字列
+* 戻り値： バイト数 
+*
+****************************************************************/
+function CountLength(str) {
+    var r = 0;
+    for (var i = 0; i < str.length; i++) {
+        var c = str.charCodeAt(i);
+        // Shift_JIS: 0x0 ～ 0x80, 0xa0 , 0xa1 ～ 0xdf , 0xfd ～ 0xff
+        // Unicode : 0x0 ～ 0x80, 0xf8f0, 0xff61 ～ 0xff9f, 0xf8f1 ～ 0xf8f3
+        if ( (c >= 0x0 && c < 0x81) || (c == 0xf8f0) || (c >= 0xff61 && c < 0xffa0) || (c >= 0xf8f1 && c < 0xf8f4)) {
+            r += 1;
+        } else {
+            r += 2;
+        }
+    }
+    return r;
+}
