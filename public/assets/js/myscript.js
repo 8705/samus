@@ -2,11 +2,13 @@ var clipBoard;
 
 (function (clipBoard){
   var set = (function(){
-    var path = 'https://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.swf';
+    var path = 'ZeroClipboard.swf';
     return function(click,copy) {
       click.zclip({
         path:path,
-        copy:copy.text()
+        copy: function(){
+          return copy.val();
+        }
       });
     };
   })();
@@ -14,6 +16,5 @@ var clipBoard;
 })(clipBoard || (clipBoard = {}));
 
 $(function(){
-  clipBoard.set($('.click'),$('#copy'));
-
+  clipBoard.set($('#copy-button'),$('#copy-button').prev());
 });
