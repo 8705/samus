@@ -15,4 +15,5 @@ var clipBoard;
 
 $(function(){
   clipBoard.set($('.click'),$('#copy'));
+
 });
