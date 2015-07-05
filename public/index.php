@@ -15,6 +15,9 @@
 <script src="assets/js/jquery.ba-tinypubsub.js"></script>
 <script src="assets/js/myscript.js?v=2"></script>
 <script src="assets/js/image.js"></script>
+<?php if (getenv('APPLICATION_ENV') === 'production'): ?>
+<script src="assets/js/analytics.js"></script>
+<?php endif; ?>
 </head>
 <body>
 <div class="container">
