@@ -45,6 +45,7 @@
     </div>
     <div class="row col-md-5">
         <h2>画像ダウンロード</h2>
+        <span>サイズを指定して好きな拡張子の画像を取り放題！</span>
         <table class="image table table-condensed">
             <tr>
                 <td colspan="2">
