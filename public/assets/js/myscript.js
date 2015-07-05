@@ -2,7 +2,7 @@ var clipBoard;
 
 (function (clipBoard){
   var set = (function(){
-    var path = '/assets/js/ZeroClipboard.swf';
+    var path = 'https://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.swf';
     return function(click,copy) {
       click.zclip({
         path:path,
