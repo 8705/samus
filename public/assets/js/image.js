@@ -32,22 +32,14 @@ $(function(){
   var url,ext,w,h;
   var re = /^[0-9]{1,4}$/;
   $('#input-width').on('keyup change',function(){
-    if ( $(this).val() === "" ) {
-      $.publish('image/widthError');
-      return;
-    }
-    if ( !$(this).val().match(re) || $(this).val() > MAXSIZE) {
+    if ( ($(this).val() !== "" && !$(this).val().match(re)) || $(this).val() > MAXSIZE) {
       $.publish('image/widthError',err.imagesizemsg);
       return;
     }
     $.publish('image/setWidth',$(this).val());
   });
   $('#input-height').on('keyup change',function(){
-    if ( $(this).val() === "" ) {
-      $.publish('image/heightError');
-      return;
-    }
-    if ( !$(this).val().match(re) || $(this).val() > MAXSIZE) {
+    if ( ($(this).val() !== "" && !$(this).val().match(re)) || $(this).val() > MAXSIZE) {
       $.publish('image/heightError',err.imagesizemsg);
       return;
     }
