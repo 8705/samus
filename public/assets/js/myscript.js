@@ -2,12 +2,17 @@ var clipBoard;
 
 (function (clipBoard){
   var set = (function(){
-    var path = 'ZeroClipboard.swf';
-    return function(click,copy) {
+    var path = '/assets/js/ZeroClipboard.swf';
+    return function(click) {
       click.zclip({
-        path:path,
+        path: path,
+        beforeCopy:function(){
+          var text = $('#text1').val();
+          var num  = $('#num1').val();
+          $('#copytext').val(text.repeat(num));
+        },
         copy: function(){
-          return copy.val();
+          return $('#copytext').val();
         },
         afterCopy:function(){
           $.publish('copy/success',[$(this)]);
@@ -31,5 +36,5 @@ $.subscribe("copy/success",function(event,$btn){
 });
 
 $(function(){
-  clipBoard.set($('#copy-btn'),$('#copy-btn').prev());
+  clipBoard.set($('#copy-btn'));
 });
