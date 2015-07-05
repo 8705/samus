@@ -11,6 +11,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <!-- <script src="assets/js/bootstrap.min.js"></script> -->
 <script src="assets/js/jquery.zclip.min.js"></script>
+<script src="assets/js/jquery.snippet.min.js"></script>
 <!-- <script src="assets/js/script.js"></script> -->
 </head>
 <body>
