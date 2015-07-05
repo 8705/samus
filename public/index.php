@@ -33,23 +33,48 @@
         </div>
         <div class="col-md-4"></div>
     </div>
-    <div class="row">
-        <div class="form-group col-md-2">
-            <label for="input-width">Width:</label>
-            <input type="text" class="form-control" id="input-width" placeholder="100px">
-            <span class="widthError"></span>
-        </div>
-        <div class="form-group col-md-2">
-            <label for="input-height">height:</label>
-            <input type="text" class="form-control" id="input-height" placeholder="100px">
-            <span class="heightError"></span>
-        </div>
-        <div class="col-md-8">
-
-            <a class="btn btn-default download-btn" data-w="100" data-h="100" data-ext="png" href="/src/image.php" role="button">.png</a>
-            <a class="btn btn-default download-btn" data-w="100" data-h="100" data-ext="jpg" href="/src/image.php" role="button">.jpg</a>
-            <a class="btn btn-default download-btn" data-w="100" data-h="100" data-ext="gif" href="/src/image.php" role="button">.gif</a>
-        </div>
+    <div class="row col-md-5">
+        <h2>画像ダウンロード</h2>
+        <table class="image table table-condensed">
+            <tr>
+                <td colspan="2">
+                    <div class="form-group col-md-6">
+                        <label for="input-width">Width:</label>
+                        <input type="text" class="form-control" id="input-width" placeholder="100px">
+                        <span class="widthError"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="input-height">height:</label>
+                        <input type="text" class="form-control" id="input-height" placeholder="100px">
+                        <span class="heightError"></span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <span class="view-w">100</span><span class="view-x">✕</span><span class="view-h">100</span>
+                </th>
+                <td>
+                    <a class="btn btn-default download-btn" data-w="100" data-h="100" data-ext="png" href="/src/image.php" role="button">.png</a>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <span class="view-w">100</span><span class="view-x">✕</span><span class="view-h">100</span>
+                </th>
+                <td>
+                    <a class="btn btn-default download-btn" data-w="100" data-h="100" data-ext="jpg" href="/src/image.php" role="button">.jpg</a>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <span class="view-w">100</span><span class="view-x">✕</span><span class="view-h">100</span>
+                </th>
+                <td>
+                    <a class="btn btn-default download-btn" data-w="100" data-h="100" data-ext="gif" href="/src/image.php" role="button">.gif</a>
+                </td>
+            </tr>
+        </table>
     </div>
 </div>
 </body>

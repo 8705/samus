@@ -1,6 +1,14 @@
 <?php
+$refferer = $_SERVER["HTTP_REFERER"];
+if ($refferer !== 'http://samus.8705.co/' &&
+    $refferer !== 'http://mamp.samus/' &&
+    $refferer !== 'http://samus.local.com')
+{
+    exit;
+}
 try {
     define("MAX_SIZE", 4048);
+    define("ERR_MSG", 'リクエストに誤りがあります');
 
     // preg_matchで判定
     $ext        = $_GET['ext'];
@@ -8,19 +16,19 @@ try {
     $height     = $_GET['h'];
 
     if ( !isset($ext) || !isset($width) || !isset($height) ) {
-        throw new RuntimeException('リクエストに誤りがあります');
+        throw new RuntimeException(ERR_MSG);
     }
     if ( !preg_match('/^png|jpge|jpg|gif$/u', $ext) ) {
-        throw new RuntimeException('リクエストに誤りがあります');
+        throw new RuntimeException(ERR_MSG);
     }
     if ( !preg_match('/^[0-9]{1,4}$/u', $width) ) {
-        throw new RuntimeException('リクエストに誤りがあります');
+        throw new RuntimeException(ERR_MSG);
     }
     if ( !preg_match('/^[0-9]{1,4}$/u', $height) ) {
-        throw new RuntimeException('リクエストに誤りがあります');
+        throw new RuntimeException(ERR_MSG);
     }
     if ( (int)$width > MAX_SIZE || (int)$height > MAX_SIZE ) {
-        throw new RuntimeException('リクエストに誤りがあります');
+        throw new RuntimeException(ERR_MSG);
     }
 
     header ('Content-Type: application/octet-stream');
