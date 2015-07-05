@@ -13,8 +13,9 @@ var clipBoard;
               text = $('#copytext').val();
               break;
             case 'copy-btn2':
-              var num = $('#num').val();
-              text = String_random('[a-z]{'+num+'}');
+              var type = $("select[id='random_type']").val();
+              var num  = $('#num').val();
+              text = String_random(type+'{'+num+'}');
               break;
             default:
               break;

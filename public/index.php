@@ -25,10 +25,18 @@
     <div class="row">
         <div class="col-md-8">
             <h3>入力した文字列をコピーできる</h3>
-            <textarea id="copytext"></textarea>
+            <textarea id="copytext" class="form-control"></textarea>
             <a id="copy-btn1" href="#" class="btn btn-success">Copy</a>
             <h3>入力した文字数分だけランダム文字列をコピーできる</h3>
-            <input id="num" type="text" placeholder="100">
+            <select id="random_type" class="form-control">
+                <option value="[a-zA-Z0-9]">半角英数字(a-zA-Z0-9)</option>
+                <option value="[a-zA-Z]">半角英字のみ(a-zA-Z)</option>
+                <option value="[0-9]">半角数字のみ(0-9)</option>
+                <option value=".">半角文字なら何でもあり</option>
+                <option value="[ぁ-ん]">全角平仮名のみ(ぁ-ん)</option>
+                <option value="[ぁ-んァ-ヶー一-龠]">全角日本語(ぁ-んァ-ヶー一-龠)</option>
+            </select>
+            <input id="num" type="text" class="form-control" placeholder="100">
             <a id="copy-btn2" href="#" class="btn btn-success">Copy</a>
         </div>
         <div class="col-md-4"></div>
