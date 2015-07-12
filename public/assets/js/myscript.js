@@ -12,12 +12,10 @@ var clipBoard;
             case 'copy-btn1':
               text = $('#copytext').val();
               break;
-            case 'copy-btn2':
-              var type = $("select[id='random_type']").val();
-              var num  = $('#num').val();
-              text = String_random(type+'{'+num+'}');
-              break;
             default:
+              var type = $(this).data('type');
+              var num  = $(this).data('num');
+              text = String_random(type+'{'+num+'}');
               break;
           }
           $('#text_count').text(text.length);
@@ -50,8 +48,7 @@ $.subscribe("copy/success",function(event,$btn){
 
 $(function(){
   clipBoard.set($('#copy-btn1'));
-  clipBoard.set($('#copy-btn2'));
-  clipBoard.set($('#copy-btn3'));
+  clipBoard.set($('.copy-btn2'));
 });
 
 /****************************************************************
