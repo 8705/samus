@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -16,11 +17,19 @@
 <script src="assets/js/jquery.ba-tinypubsub.js"></script>
 <script src="assets/js/myscript.js"></script>
 <script src="assets/js/image.js"></script>
+<script src="assets/js/samus.js"></script>
 <?php if (getenv('APPLICATION_ENV') === 'production'): ?>
 <script src="assets/js/analytics.js"></script>
 <?php endif; ?>
 </head>
 <body>
+<nav class="nav ">
+    <div class="container">
+        <div class="logo">
+            <a class="cabin" href="#">SAMUS</a>
+        </div>
+    </div>
+</nav>
 <div class="container">
     <div class="row">
         <div class="col-md-8">
@@ -124,21 +133,32 @@
                     <span class="view-w">100</span><span class="view-x">✕</span><span class="view-h">100</span>
                 </th>
                 <td>
-                    <a class="btn btn-success download-btn" data-w="100" data-h="100" data-ext="png" href="/src/image.php" role="button">.png</a>
+                    <a class="btn btn-orenge download-btn" data-w="100" data-h="100" data-ext="png" href="/src/image.php" role="button">.png</a>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a class="btn btn-success download-btn" data-w="100" data-h="100" data-ext="jpg" href="/src/image.php" role="button">.jpg</a>
+                    <a class="btn btn-orenge download-btn" data-w="100" data-h="100" data-ext="jpg" href="/src/image.php" role="button">.jpg</a>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a class="btn btn-success download-btn" data-w="100" data-h="100" data-ext="gif" href="/src/image.php" role="button">.gif</a>
+                    <a class="btn btn-orenge download-btn" data-w="100" data-h="100" data-ext="gif" href="/src/image.php" role="button">.gif</a>
                 </td>
             </tr>
         </table>
     </div>
 </div>
+<div class="footer">
+    <div class="container">
+        <span class="copyright cabin">Copyright &copy; <?php echo date('Y');?> <a href="http://8705.co">8705.co</a> All Rights Reserved.</span>
+    </div>
+</div>
+<span id="samus"></span>
+<script>
+    $(function(){
+        $('#samus').samus();
+    })
+</script>
 </body>
 </html>

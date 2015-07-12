@@ -32,7 +32,7 @@ try {
     }
 
     header ('Content-Type: application/octet-stream');
-    $filename   = 'W'.$width.'H'.$height.'.'.$ext;
+    $filename   = 'w'.$width.'h'.$height.'.'.$ext;
     header ('Content-disposition: attachment; filename="'.$filename.'"');
 
     // var_dump($filename);exit;
