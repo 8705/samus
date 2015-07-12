@@ -157,8 +157,8 @@
 <span id="samus"></span>
 <script>
     $(function(){
-        $('#samus').samus();
-    })
+        $('#samus').samus({r:50});
+    });
 </script>
 </body>
 </html>

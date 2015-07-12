@@ -5,6 +5,7 @@
 
     Ball = (function(){
       Ball.W = window.innerWidth;
+      Ball.H = window.innerHeight;
       Ball.time = 20;
       Ball.speed = 5;
       Ball.defaults = {
@@ -17,18 +18,24 @@
       };
 
       function Ball($elm) {
-        config        = config || {};
+        //config        = config || {};
         this.heaping  = false;
         this.moving   = false;
         this.defaults = $.extend(Ball.defaults, config);
         this.param    = $.extend({},this.defaults);
         this.ball     = $elm;
         this.sizeID   = 0;
+        this.pointerx = 0;
+        this.pointery = 0;
         this.render();
 
         // event listner
         $elm.on('mousedown', $.proxy(this.heap,this));
         $(window).on('mouseup', $.proxy(this.launch,this));
+        $(window).on('mousemove', $.proxy(function(e){
+          this.pointerx = e.clientX;
+          this.pointery = e.clientY;
+        },this));
       }
 
       Ball.prototype = {
@@ -56,12 +63,16 @@
           this.moving = true;
 
           clearInterval(this.sizeId);
-
+          v = this._vector();
           moveID = setInterval($.proxy(function(){
-            this.param.x = this.param.x + Ball.speed;
+            this.param.x = this.param.x + v.x * Ball.speed;
+            this.param.y = this.param.y + v.y * Ball.speed;
             this.render();
 
-            if ( this.param.x + this.param.r * 0.5 > Ball.W) {
+            if ( this.param.x + this.param.r * 0.5 > Ball.W ||
+                  this.param.x + this.param.r * 0.5 < 0 ||
+                  this.param.y + this.param.r * 0.5 > Ball.H ||
+                  this.param.y + this.param.r * 0.5 < 0) {
               $('body').addClass('bbb');
               clearInterval(moveID);
               this.reset();
@@ -82,6 +93,17 @@
                 this.render();
               },this),Ball.time);
           }
+        },
+
+        _vector: function(){
+          px = Ball.W - this.pointerx;
+          py = this.pointery;
+          dx = px - this.param.x;
+          dy = py - this.param.y;
+          return {
+            x: dx/Math.sqrt(Math.pow((dx+dy), 2)),
+            y: dy/Math.sqrt(Math.pow((dx+dy), 2)),
+          };
         }
       };
 
