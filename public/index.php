@@ -35,7 +35,7 @@
         <div class="col-md-8">
             <h3>入力した文字列をコピーできる</h3>
             <textarea id="copytext" class="form-control"></textarea>
-            <a id="copy-btn1" class="btn btn-success">Copy</a>
+            <a id="copy-btn1" class="btn btn-orenge">Copy</a>
             文字数：<span id="text_count">0</span> 文字
             byte数：<span id="text_byte">0</span> byte
             <h3>入力した文字数分だけランダム文字列をコピーできる</h3>
@@ -67,44 +67,44 @@
                     </th>
                 </tr>
                 <tr>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z0-9]"        data-num="8">8</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z]"           data-num="8">8</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[0-9]"              data-num="8">8</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="."                  data-num="8">8</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-ん]"            data-num="8">8</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-んァ-ヶー一-龠]" data-num="8">8</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[a-zA-Z0-9]"        data-num="8">8</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[a-zA-Z]"           data-num="8">8</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[0-9]"              data-num="8">8</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="."                  data-num="8">8</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[ぁ-ん]"            data-num="8">8</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[ぁ-んァ-ヶー一-龠]" data-num="8">8</a></td>
                 </tr>
                 <tr>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z0-9]"        data-num="50">50</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z]"           data-num="50">50</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[0-9]"              data-num="50">50</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="."                  data-num="50">50</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-ん]"            data-num="50">50</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-んァ-ヶー一-龠]" data-num="50">50</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[a-zA-Z0-9]"        data-num="50">50</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[a-zA-Z]"           data-num="50">50</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[0-9]"              data-num="50">50</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="."                  data-num="50">50</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[ぁ-ん]"            data-num="50">50</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[ぁ-んァ-ヶー一-龠]" data-num="50">50</a></td>
                 </tr>
                 <tr>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z0-9]"        data-num="100">100</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z]"           data-num="100">100</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[0-9]"              data-num="100">100</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="."                  data-num="100">100</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-ん]"            data-num="100">100</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-んァ-ヶー一-龠]" data-num="100">100</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[a-zA-Z0-9]"        data-num="100">100</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[a-zA-Z]"           data-num="100">100</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[0-9]"              data-num="100">100</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="."                  data-num="100">100</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[ぁ-ん]"            data-num="100">100</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[ぁ-んァ-ヶー一-龠]" data-num="100">100</a></td>
                 </tr>
                 <tr>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z0-9]"        data-num="500">500</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z]"           data-num="500">500</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[0-9]"              data-num="500">500</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="."                  data-num="500">500</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-ん]"            data-num="500">500</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-んァ-ヶー一-龠]" data-num="500">500</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[a-zA-Z0-9]"        data-num="500">500</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[a-zA-Z]"           data-num="500">500</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[0-9]"              data-num="500">500</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="."                  data-num="500">500</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[ぁ-ん]"            data-num="500">500</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[ぁ-んァ-ヶー一-龠]" data-num="500">500</a></td>
                 </tr>
                 <tr>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z0-9]"        data-num="8">free</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z]"           data-num="8">free</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[0-9]"              data-num="8">free</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="."                  data-num="8">free</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-ん]"            data-num="8">free</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-んァ-ヶー一-龠]" data-num="8">free</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[a-zA-Z0-9]"        data-num="8">free</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[a-zA-Z]"           data-num="8">free</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[0-9]"              data-num="8">free</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="."                  data-num="8">free</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[ぁ-ん]"            data-num="8">free</a></td>
+                    <td><a class="copy-btn2 btn btn-orenge" data-type="[ぁ-んァ-ヶー一-龠]" data-num="8">free</a></td>
                 </tr>
             </table>
         </div>
@@ -157,7 +157,7 @@
 <span id="samus"></span>
 <script>
     $(function(){
-        $('#samus').samus({r:50});
+        $('#samus').samus();
     });
 </script>
 </body>
