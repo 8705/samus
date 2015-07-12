@@ -30,3 +30,50 @@
 .image span.error {
   color:#FA874B;
 }
+.cabin {
+  font-family: 'Cabin', sans-serif;
+}
+.btn-orenge {
+  color: #FFF;
+  background-color: #ef7900;
+  border-color: #D36B00;
+}
+.orenge {
+  background-color: #ef7900;
+}
+
+/* header */
+.navbar {
+  border-radius: 0px;
+}
+.nav .container{
+  text-align: center;
+}
+.nav .logo {
+  display:inline-block;
+  font-size:20px;
+}
+.nav .logo a {
+  padding: 5px;
+  height: 30px;
+  color:#ef7900;
+  text-decoration: none;
+}
+.navbar-default .navbar-brand:hover {
+  color:#FA7F00;
+}
+.nav {
+  border-top: 4px solid #EF7900;
+  padding: 5px 0 0 0;
+}
+
+/* footer */
+.footer .container {
+  text-align: center;
+}
+.footer .copyright {
+  color:#ef7900;
+}
+.footer .copyright a{
+  color:#ef7900;
+}
