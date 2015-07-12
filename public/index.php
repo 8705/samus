@@ -17,6 +17,7 @@
 <script src="assets/js/jquery.ba-tinypubsub.js"></script>
 <script src="assets/js/myscript.js"></script>
 <script src="assets/js/image.js"></script>
+<script src="assets/js/samus.js"></script>
 <?php if (getenv('APPLICATION_ENV') === 'production'): ?>
 <script src="assets/js/analytics.js"></script>
 <?php endif; ?>
@@ -95,5 +96,11 @@
         <span class="copyright cabin">Copyright &copy; <?php echo date('Y');?> <a href="http://8705.co">8705.co</a> All Rights Reserved.</span>
     </div>
 </div>
+<span id="samus"></span>
+<script>
+    $(function(){
+        $('#samus').samus();
+    })
+</script>
 </body>
 </html>
