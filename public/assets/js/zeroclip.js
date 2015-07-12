@@ -138,9 +138,8 @@ var ZeroClipboard = {version: "1.0.7",clients: {},moviePath: "ZeroClipboard.swf"
     },getDOMObjectPosition: function(c, a) {
         var b = {left: 0,top: 0,width: c.width ? c.width : c.offsetWidth,height: c.height ? c.height : c.offsetHeight};
         if (c && (c != a)) {
-            var el = $(c).offset();
-            b.left += el.left - 78;
-            b.top  += el.top  - 20;
+            b.left += c.offsetLeft;
+            b.top  += c.offsetTop;
         }
         return b
     },Client: function(a) {

@@ -67,44 +67,44 @@
                     </th>
                 </tr>
                 <tr>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z0-9]"        data-num="8">8</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z]"           data-num="8">8</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[0-9]"              data-num="8">8</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="."                  data-num="8">8</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-ん]"            data-num="8">8</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-んァ-ヶー一-龠]" data-num="8">8</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[a-zA-Z0-9]"        data-num="8">8</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[a-zA-Z]"           data-num="8">8</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[0-9]"              data-num="8">8</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="."                  data-num="8">8</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[ぁ-ん]"            data-num="8">8</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[ぁ-んァ-ヶー一-龠]" data-num="8">8</a></td>
                 </tr>
                 <tr>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z0-9]"        data-num="50">50</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z]"           data-num="50">50</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[0-9]"              data-num="50">50</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="."                  data-num="50">50</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-ん]"            data-num="50">50</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-んァ-ヶー一-龠]" data-num="50">50</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[a-zA-Z0-9]"        data-num="50">50</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[a-zA-Z]"           data-num="50">50</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[0-9]"              data-num="50">50</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="."                  data-num="50">50</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[ぁ-ん]"            data-num="50">50</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[ぁ-んァ-ヶー一-龠]" data-num="50">50</a></td>
                 </tr>
                 <tr>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z0-9]"        data-num="100">100</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z]"           data-num="100">100</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[0-9]"              data-num="100">100</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="."                  data-num="100">100</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-ん]"            data-num="100">100</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-んァ-ヶー一-龠]" data-num="100">100</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[a-zA-Z0-9]"        data-num="100">100</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[a-zA-Z]"           data-num="100">100</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[0-9]"              data-num="100">100</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="."                  data-num="100">100</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[ぁ-ん]"            data-num="100">100</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[ぁ-んァ-ヶー一-龠]" data-num="100">100</a></td>
                 </tr>
                 <tr>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z0-9]"        data-num="500">500</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z]"           data-num="500">500</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[0-9]"              data-num="500">500</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="."                  data-num="500">500</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-ん]"            data-num="500">500</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-んァ-ヶー一-龠]" data-num="500">500</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[a-zA-Z0-9]"        data-num="500">500</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[a-zA-Z]"           data-num="500">500</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[0-9]"              data-num="500">500</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="."                  data-num="500">500</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[ぁ-ん]"            data-num="500">500</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[ぁ-んァ-ヶー一-龠]" data-num="500">500</a></td>
                 </tr>
                 <tr>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z0-9]"        data-num="8">free</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[a-zA-Z]"           data-num="8">free</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[0-9]"              data-num="8">free</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="."                  data-num="8">free</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-ん]"            data-num="8">free</a></td>
-                    <td><a class="copy-btn2 btn btn-success" data-type="[ぁ-んァ-ヶー一-龠]" data-num="8">free</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[a-zA-Z0-9]"        data-num="8">free</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[a-zA-Z]"           data-num="8">free</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[0-9]"              data-num="8">free</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="."                  data-num="8">free</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[ぁ-ん]"            data-num="8">free</a></td>
+                    <td><a class="copy-btn2 btn btn-success zclip-position" data-type="[ぁ-んァ-ヶー一-龠]" data-num="8">free</a></td>
                 </tr>
             </table>
         </div>
