@@ -55,6 +55,7 @@
 
         reset: function(){
           this.param = $.extend({},this.defaults);
+          $('body').css('backgroundColor','hsl(0,0%,100%)');
           this.render();
         },
 
@@ -90,6 +91,7 @@
             this.sizeId = setInterval($.proxy(
               function(){
                 this.param.r = this.param.r + 0.2;
+                this._dark(this.param.r);
                 this.render();
               },this),Ball.time);
           }
@@ -100,11 +102,17 @@
           py = this.pointery;
           dx = px - this.param.x;
           dy = py - this.param.y;
+          dd = Math.sqrt(Math.pow((dx+dy), 2));
           return {
-            x: dx/Math.sqrt(Math.pow((dx+dy), 2)),
-            y: dy/Math.sqrt(Math.pow((dx+dy), 2)),
+            x: dx/dd,
+            y: dy/dd,
           };
-        }
+        },
+
+        _dark: function(color){
+          max = Ball.W > Ball.H ? Ball.H : Ball.W;
+          $('body').css('backgroundColor','hsl(0,0%,'+((1 - color/max)*100)+'%)');
+        },
       };
 
       return Ball;
