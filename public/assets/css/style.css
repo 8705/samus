@@ -1,3 +1,6 @@
+body {
+  color:#373737;
+}
 .icon-copy {
   position: relative;
   font-weight: bold;
@@ -112,4 +115,4 @@ body {
 .zclip-position {
   position: relative;
   display: inline-block;
-} 
+}

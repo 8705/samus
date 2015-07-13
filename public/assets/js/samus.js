@@ -40,6 +40,10 @@
 
       Ball.prototype = {
 
+        init: function(){
+          this.render();
+        },
+
         render: function(){
           this.param.shadow = this.param.r * 0.2;
           this.ball.css({
@@ -56,6 +60,7 @@
         reset: function(){
           this.param = $.extend({},this.defaults);
           $('body').css('backgroundColor','hsl(0,0%,100%)');
+          $('.track').remove();
           this.render();
         },
 
@@ -65,21 +70,32 @@
 
           clearInterval(this.sizeId);
           v = this._vector();
+          // console.log(v.x,v.y);
+          cnt = 0;
           moveID = setInterval($.proxy(function(){
             this.param.x = this.param.x + v.x * Ball.speed;
             this.param.y = this.param.y + v.y * Ball.speed;
             this.render();
-
-            if ( this.param.x + this.param.r * 0.5 > Ball.W ||
-                  this.param.x + this.param.r * 0.5 < 0 ||
-                  this.param.y + this.param.r * 0.5 > Ball.H ||
-                  this.param.y + this.param.r * 0.5 < 0) {
+            // v2 = this._vector(v);
+            // console.log(v.x,v.y,v2.x,v2.y);
+            // v.x = v.x + v2.x / 500;
+            // v.y = v.y + v2.y / 500;
+            v = this._guid(v);
+            // console.log(moveID);
+            if ( cnt % 2 === 0) {
+              $('body').append('<span class="track" style="position:absolute;top:'+(this.param.y - this.param.r * 0.5)+'px;right:'+(this.param.x - this.param.r * 0.5)+'px">.</span>');
+            }
+            if ( this.param.x + this.param.r * 0.3 > Ball.W ||
+                  this.param.x + this.param.r * 0.3 < 0 ||
+                  this.param.y + this.param.r * 0.3 > Ball.H ||
+                  this.param.y + this.param.r * 0.3 < 0) {
               $('body').addClass('bbb');
               clearInterval(moveID);
               this.reset();
               this.heaping = false;
               this.moving = false;
             }
+            cnt++;
           }, this), Ball.time * 0.5);
         },
 
@@ -102,11 +118,36 @@
           py = this.pointery;
           dx = px - this.param.x;
           dy = py - this.param.y;
-          dd = Math.sqrt(Math.pow((dx+dy), 2));
+          dirx = dx > 0 ? 1 : -1;
+          diry = dy > 0 ? 1 : -1;
+          absx = Math.abs(dx);
+          absy = Math.abs(dy);
+          // console.log(difx,dify,difx+dify);
           return {
-            x: dx/dd,
-            y: dy/dd,
+            x: dirx * (absx/(absx+absy)),
+            y: diry * (absy/(absx+absy)),
           };
+        },
+
+        _guid:function(v1){
+          gravitation = 30;
+          v2 = this._vector();
+          // console.log("v1:"+v1.x,v1.y);
+          // console.log("v2:"+v2.x,v2.y);
+          vx = v1.x + (v2.x / gravitation);
+          vy = v1.y + (v2.y / gravitation);
+          dirx = vx > 0 ? 1 : -1;
+          diry = vy > 0 ? 1 : -1;
+          // console.log("sum"+vx,vy);
+          absvx = Math.abs(vx);
+          absvy = Math.abs(vy);
+          // console.log("abs"+absvx,absvy);
+          res = {
+            x: dirx * (absvx/(absvx+absvy)),
+            y: diry * (absvy/(absvx+absvy)),
+          };
+          // console.log("res:"+res.x,res.y);
+          return res;
         },
 
         _dark: function(color){
@@ -119,6 +160,7 @@
     })();
 
     return this.each(function(){
+      $('body').css('position','relative');
       b = new Ball($(this));
       b.render();
     });
