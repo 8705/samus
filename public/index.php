@@ -15,19 +15,14 @@
 <nav class="nav ">
     <div class="container">
         <div class="logo">
-            <a class="cabin" href="#">SAMUS</a>
+            <a class="cabin" href="/">SAMUS</a>
         </div>
     </div>
 </nav>
 <div class="container">
     <div class="row">
-        <div class="col-md-8">
-            <h3>入力した文字列をコピーできる</h3>
-            <textarea id="copytext" class="form-control"></textarea>
-            <a id="copy-btn1" class="btn btn-orange">Copy</a>
-            文字数：<span id="text_count">0</span> 文字
-            byte数：<span id="text_byte">0</span> byte
-            <h3>入力した文字数分だけランダム文字列をコピーできる</h3>
+        <div class="col-md-7">
+            <h3>クリックして文字列をクリップボードにコピー</h3>
             <table class="table">
                 <tr>
                     <th>
@@ -97,7 +92,15 @@
                 </tr>
             </table>
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-5">
+            <h3>文字列をクリップボードにコピー</h3>
+            <textarea id="copytext" class="form-control"></textarea>
+            <span class="count-area">
+                文字数：<span id="text_count">0</span> 文字
+                byte数：<span id="text_byte">0</span> byte
+            </span>
+            <a id="copy-btn1" class="btn btn-orange right">Copy</a>
+        </div>
     </div>
     <div class="row col-md-5">
         <h2>画像ダウンロード</h2>
