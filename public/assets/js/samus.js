@@ -71,7 +71,6 @@
           clearInterval(this.sizeId);
           v = this._vector();
           // console.log(v.x,v.y);
-          cnt = 0;
           moveID = setInterval($.proxy(function(){
             this.param.x = this.param.x + v.x * Ball.speed;
             this.param.y = this.param.y + v.y * Ball.speed;
@@ -81,10 +80,6 @@
             // v.x = v.x + v2.x / 500;
             // v.y = v.y + v2.y / 500;
             v = this._guid(v);
-            // console.log(moveID);
-            if ( cnt % 2 === 0) {
-              $('body').append('<span class="track" style="position:absolute;top:'+(this.param.y - this.param.r * 0.5)+'px;right:'+(this.param.x - this.param.r * 0.5)+'px">.</span>');
-            }
             if ( this.param.x + this.param.r * 0.3 > Ball.W ||
                   this.param.x + this.param.r * 0.3 < 0 ||
                   this.param.y + this.param.r * 0.3 > Ball.H ||
@@ -95,7 +90,6 @@
               this.heaping = false;
               this.moving = false;
             }
-            cnt++;
           }, this), Ball.time * 0.5);
         },
 
@@ -109,7 +103,7 @@
                 this.param.r = this.param.r + 0.2;
                 this._dark(this.param.r);
                 this.render();
-              },this),Ball.time);
+              },this),Ball.time*2);
           }
         },
 

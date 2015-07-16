@@ -49,13 +49,20 @@ $.subscribe("copy/success",function(event,$btn){
 $(function(){
   clipBoard.set($('#copy-btn1'));
   clipBoard.set($('.copy-btn2'));
+
+  $('#copytext').on('keyup mouseup',function(){
+    text = $(this).val();
+    $('#text_count').text(text.length);
+    $('#text_byte').text(CountLength(text));
+  });
 });
+
 
 /****************************************************************
 * バイト数を数える
 *
 * 引数 ： str 文字列
-* 戻り値： バイト数 
+* 戻り値： バイト数
 *
 ****************************************************************/
 function CountLength(str) {
