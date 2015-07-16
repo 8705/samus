@@ -10,17 +10,6 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="assets/js/String_random.js"></script>
-<script src="assets/js/zeroclip.js"></script>
-<script src="assets/js/jquery.ba-tinypubsub.js"></script>
-<script src="assets/js/myscript.js"></script>
-<script src="assets/js/image.js"></script>
-<script src="assets/js/samus.js"></script>
-<?php if (getenv('APPLICATION_ENV') === 'production'): ?>
-<script src="assets/js/analytics.js"></script>
-<?php endif; ?>
 </head>
 <body>
 <nav class="nav ">
@@ -155,6 +144,17 @@
     </div>
 </div>
 <span id="samus"></span>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="assets/js/String_random.js"></script>
+<script src="assets/js/zeroclip.js"></script>
+<script src="assets/js/jquery.ba-tinypubsub.js"></script>
+<script src="assets/js/myscript.js"></script>
+<script src="assets/js/image.js"></script>
+<script src="assets/js/samus.js"></script>
+<?php if (getenv('APPLICATION_ENV') === 'production'): ?>
+<script src="assets/js/analytics.js"></script>
+<?php endif; ?>
 <script>
     $(function(){
         $('#samus').samus();

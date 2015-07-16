@@ -50,7 +50,7 @@ $(function(){
   clipBoard.set($('#copy-btn1'));
   clipBoard.set($('.copy-btn2'));
 
-  $('#copytext').on('keyup mouseup',function(){
+  $('#copytext').on('keyup mouseup change',function(){
     text = $(this).val();
     $('#text_count').text(text.length);
     $('#text_byte').text(CountLength(text));

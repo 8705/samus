@@ -1,6 +1,9 @@
 body {
   color:#373737;
 }
+.table {
+  table-layout: fixed;
+}
 .icon-copy {
   position: relative;
   font-weight: bold;
@@ -125,4 +128,13 @@ body {
 .zclip-position {
   position: relative;
   display: inline-block;
+}
+.copy-btn2 {
+  min-width: 50px;
+}
+#copytext {
+  margin:0 0 5px 0;
+}
+#text_count,#text_byte {
+  font-size: 25px;
 }
