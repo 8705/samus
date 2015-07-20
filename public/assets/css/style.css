@@ -1,6 +1,11 @@
 body {
   color:#373737;
 }
+h1 {
+  display: inline;
+    font-size: 12px;
+    margin: 0 0 0 15px;
+}
 .table {
   table-layout: fixed;
 }

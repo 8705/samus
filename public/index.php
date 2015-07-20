@@ -3,9 +3,10 @@
 <head>
 <meta name="google-site-verification" content="GGvL9kjVYgDqlds06gjtBqv6oR_bqjSx7MaLiorCODw" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Samus 入力テスト</title>
+<title>文字数カウント samus</title>
 <meta charset="utf-8">
-<meta name="description" content="フォームのユーザーテストに使用するテキストや画像を提供しています">
+<meta name="description" content="文字数カウントの他にもフォームのユーザーテストに使用するテキストや画像を提供しています">
+<meta name="keywords" content="文字数カウント,ダミーテキスト,ダミー画像">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
@@ -16,14 +17,14 @@
 <nav class="nav ">
     <div class="container">
         <div class="logo">
-            <a class="cabin" href="/">SAMUS</a>
+            <a class="cabin" href="/">SAMUS</a><h1>文字数カウント</h1>
         </div>
     </div>
 </nav>
 <div class="container">
     <div class="row">
         <div class="col-md-7">
-            <h3>クリックして文字列をクリップボードにコピー</h3>
+            <h2>クリックして文字列をクリップボードにコピー</h2>
             <table class="table">
                 <tr>
                     <th>
@@ -94,7 +95,7 @@
             </table>
         </div>
         <div class="col-md-5">
-            <h3>文字列をクリップボードにコピー</h3>
+            <h2>文字数カウント</h2>
             <textarea id="copytext" class="form-control"></textarea>
             <span class="count-area">
                 文字数：<span id="text_count">0</span> 文字
@@ -104,7 +105,7 @@
         </div>
     </div>
     <div class="row col-md-5">
-        <h3>画像ダウンロード</h3>
+        <h2>画像ダウンロード</h2>
         <span>サイズを指定して好きな拡張子の画像を取り放題！</span>
         <table class="image table table-condensed">
             <tr>
