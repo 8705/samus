@@ -75,10 +75,6 @@
             this.param.x = this.param.x + v.x * Ball.speed;
             this.param.y = this.param.y + v.y * Ball.speed;
             this.render();
-            // v2 = this._vector(v);
-            // console.log(v.x,v.y,v2.x,v2.y);
-            // v.x = v.x + v2.x / 500;
-            // v.y = v.y + v2.y / 500;
             v = this._guid(v);
             if ( this.param.x + this.param.r * 0.3 > Ball.W ||
                   this.param.x + this.param.r * 0.3 < 0 ||
@@ -116,7 +112,6 @@
           diry = dy > 0 ? 1 : -1;
           absx = Math.abs(dx);
           absy = Math.abs(dy);
-          // console.log(difx,dify,difx+dify);
           return {
             x: dirx * (absx/(absx+absy)),
             y: diry * (absy/(absx+absy)),
@@ -126,21 +121,16 @@
         _guid:function(v1){
           gravitation = 30;
           v2 = this._vector();
-          // console.log("v1:"+v1.x,v1.y);
-          // console.log("v2:"+v2.x,v2.y);
           vx = v1.x + (v2.x / gravitation);
           vy = v1.y + (v2.y / gravitation);
           dirx = vx > 0 ? 1 : -1;
           diry = vy > 0 ? 1 : -1;
-          // console.log("sum"+vx,vy);
           absvx = Math.abs(vx);
           absvy = Math.abs(vy);
-          // console.log("abs"+absvx,absvy);
           res = {
             x: dirx * (absvx/(absvx+absvy)),
             y: diry * (absvy/(absvx+absvy)),
           };
-          // console.log("res:"+res.x,res.y);
           return res;
         },
 

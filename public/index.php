@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="google-site-verification" content="GGvL9kjVYgDqlds06gjtBqv6oR_bqjSx7MaLiorCODw" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Samus 入力テスト</title>
 <meta charset="utf-8">
@@ -103,7 +104,7 @@
         </div>
     </div>
     <div class="row col-md-5">
-        <h2>画像ダウンロード</h2>
+        <h3>画像ダウンロード</h3>
         <span>サイズを指定して好きな拡張子の画像を取り放題！</span>
         <table class="image table table-condensed">
             <tr>
@@ -154,7 +155,7 @@
 <script src="assets/js/jquery.ba-tinypubsub.js"></script>
 <script src="assets/js/myscript.js"></script>
 <script src="assets/js/image.js"></script>
-<script src="assets/js/samus.js"></script>
+<script src="https://cdn.rawgit.com/egapool/samusball/master/samusball.js"></script>
 <?php if (getenv('APPLICATION_ENV') === 'production'): ?>
 <script src="assets/js/analytics.js"></script>
 <?php endif; ?>
