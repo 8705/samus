@@ -85,6 +85,9 @@ h1 {
 }
 
 /* footer */
+.footer {
+  margin: 60px 0 0 0;
+}
 .footer .container {
   text-align: center;
 }
@@ -152,4 +155,27 @@ body {
 }
 .count-area {
   margin:0 0px 0 0;
+}
+
+/* navigation */
+.gnavi .future{
+  background-color: #F5F5F5;
+  color: #CCC;
+}
+.gnavi .future:hover {
+  color:#CCC;
+}
+.gnavi h2 {
+  font-size: 16px;
+  margin: 0 20px 0 0;
+  float: left;
+}
+.gnavi p {
+  font-size:12px;
+  margin:0px;
+}
+
+/* top page*/
+.introduce {
+  padding: 10px 20px 20px;
 }

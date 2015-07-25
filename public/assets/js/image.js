@@ -88,7 +88,7 @@ $(function(){
       e.preventDefault;
       return false;
     }
-    url = "/src/image.php";
+    url = "/genimage";
     ext = $(this).data('ext');
     w   = $(this).data('w');
     h   = $(this).data('h');
