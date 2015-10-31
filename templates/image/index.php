@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row col-md-8">
         <h2>画像ダウンロード</h2>
-        <span>サイズを指定して好きな拡張子の画像を取り放題！※上限：縦480px横4048px</span>
+        <span>サイズを指定して好きな拡張子の画像を取り放題！※上限：縦4048px横4048px</span>
         <table class="image table table-condensed">
             <tr>
                 <td colspan="2">
