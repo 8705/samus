@@ -7,6 +7,10 @@
             <div class="list-group">
                 <a href="/charcount" class="list-group-item"><h2>文字数カウンター</h2><p>文字数及びbyte数のカウント／ランダム文字生成</p></a>
                 <a href="/image" class="list-group-item"><h2>テスト画像ジェネレーター</h2><p>サイズと拡張子を指定してテスト用画像を生成</p></a>
+                <a href="/apt-get" class="list-group-item"><h2>aptツール</h2><p>Debian,Ubuntuなどで使われるパッケージ管理方式であるdeb形式を取り扱う</p></a>
+                <a href="/yum" class="list-group-item"><h2>yumツール</h2><p>CentOS,Fedora,Red Hat Enterprise Linuxなどで採用されているパッケージrpmを取り扱う</p></a>
+                <a href="/dpkg" class="list-group-item"><h2>dpkgツール</h2><p>Debian,Ubuntuなどで使われるパッケージ管理方式であるdeb形式を取り扱う</p></a>
+                <a href="/rpm" class="list-group-item"><h2>rpmコマンド</h2><p>CentOS,Fedora,Red Hat Enterprise Linuxなどで採用されているパッケージrpmを取り扱う</p></a>
                 <a class="list-group-item future"><h2>XSSテストテキスト</h2><p>Coming Soon ...</p></a>
                 <a class="list-group-item future"><h2>パスワード/htpasswd暗号化同時生成</h2><p>Coming Soon ...</p></a>
             </div>

@@ -40,6 +40,49 @@ $app->get('/image', function () use ($app){
     $app->render("footer.php");
 });
 
+$app->get('/dpkg', function () use ($app){
+
+    $app->view->setData(array(
+        'title' => 'dpkgツール SAMUS',
+        'h1' => 'dpkgツール'
+    ));
+    $app->render('header.php');
+    $app->render("dpkg/index.php");
+    $app->render("footer.php");
+});
+$app->get('/apt-get', function () use ($app){
+
+    $app->view->setData(array(
+        'title' => 'apt-getコマンド SAMUS',
+        'h1' => 'apt-getコマンド'
+    ));
+    $app->render('header.php');
+    $app->render("apt-get/index.php");
+    $app->render("footer.php");
+});
+
+$app->get('/rpm', function () use ($app){
+
+    $app->view->setData(array(
+        'title' => 'rpmコマンド SAMUS',
+        'h1' => 'rpmコマンド'
+    ));
+    $app->render('header.php');
+    $app->render("rpm/index.php");
+    $app->render("footer.php");
+});
+
+$app->get('/yum', function () use ($app){
+
+    $app->view->setData(array(
+        'title' => 'yumコマンド SAMUS',
+        'h1' => 'yumコマンド'
+    ));
+    $app->render('header.php');
+    $app->render("yum/index.php");
+    $app->render("footer.php");
+});
+
 $app->get('/genimage', function() use ($app){
 
     $refferer = $_SERVER["HTTP_REFERER"];
