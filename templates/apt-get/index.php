@@ -5,7 +5,7 @@
 
         <h3>コマンド</h3>
         <p class="format">apt-get [option] [action]</p>
-        <table class="table table-striped">
+        <table class="command-talbe table table-striped">
             <thead>
                 <tr>
                     <th>コマンド</th>

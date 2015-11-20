@@ -7,7 +7,7 @@
         <p class="format">rpm [option] [action]</p>
 
         <h4>インストール/アップグレードモード</h4>
-        <table class="table table-striped">
+        <table class="command-talbe table table-striped">
             <thead>
                 <tr>
                     <th>コマンド</th>
@@ -57,7 +57,7 @@
             </tbody>
         </table>
         <h4>アンインストールモード</h4>
-        <table class="table table-striped">
+        <table class="command-talbe table table-striped">
             <thead>
                 <tr>
                     <th>コマンド</th>
@@ -83,7 +83,7 @@
         </table>
 
         <h4>照会モード</h4>
-        <table class="table table-striped">
+        <table class="command-talbe table table-striped">
             <thead>
                 <tr>
                     <th>コマンド</th>

@@ -5,7 +5,7 @@
 
         <h3>dpkgコマンド</h3>
         <p class="format"><code>dpkg [option] [action]</code></p>
-        <table class="table table-striped">
+        <table class="command-talbe table table-striped">
             <thead>
                 <tr>
                     <th>コマンド</th>
